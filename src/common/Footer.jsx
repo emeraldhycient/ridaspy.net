@@ -1,66 +1,92 @@
-
-import './styles.css'
-
-import ame from '../images/american-express.png'
-import visa from '../images/visa.png'
-import jcb from '../images/jcb.png'
-import symbol from '../images/symbol.png'
-import symbols from '../images/symbols.png'
+import React from "react";
+import "./styles.css";
 
 function Footer() {
-    return (
-        <footer style={{ backgroundColor: "whitesmoke" ,paddingTop:"100px"}}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-3">
-                        <small>Secure online payment:</small>
-                        <div className="mt-3" style={{height:"50px"}}>
-                        <img src={ame} alt="" srcset="" width="62px" height="40px" className="p-1" />
-                        <img src={visa} alt="" srcset="" width="62px" height="40px"  className="p-1"  />
-                        <img src={jcb} alt="" srcset="" width="62px" height="40px"  className="p-1"  />
-                        <img src={symbol} alt="" srcset="" width="62px" height="40px"  className="p-1"  />
-                        <img src={symbols} alt="" srcset="" width="62px" height="40px"  className="p-1"  />
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <small>approved by</small>
-                        <div className="mt-3">
-                        <img src="https://www.mspy.com/static/mspy/public/assets/images/sb-widget-logo-b.png" alt="" srcset="" width="80px" height="40px"  className="p-1"  />
-                        <img src="https://www.mspy.com/static/mspy/public/assets/images/pci-dss-logo.svg" alt="" srcset="" width="80" height="40px" className="p-1" />
-                        <img src="https://www.mspy.com/static/mspy/public/assets/images/Credit_Card_Safe_light.png" alt="" srcset="" width="62px" height="40px"  className="p-1"  />
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <small>social</small>
-                        <div className="d-flex pt-3">
-                            <div className="">
-                            <i className="fa fa-facebook text-primary fa-2x mr-1"></i>
-                            </div>
-                            <div className="">
-                            <i className="fa fa-twitter text-info fa-2x mr-1"></i>
-                            </div>
-                            <div className="">
-                            <i className="fa fa-whatsapp text-success fa-2x mr-1"></i>
-                            </div>
-                            <div className="">
-                            <i className="fa fa-instagram text-danger fa-2x"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-3">
-                        <small>contact us</small>
-                        <h6 className="text-muted mt-3"><a href="tel:+19733064297">+19733064297</a></h6>
-                        <h6 className="text-muted"><a href="mailto:hubspy20@gmail.com">hubspy20@gmail.com</a></h6>
-                    </div>
+  const d = new Date();
+  const year = d.getFullYear();
+  return (
+    <footer>
+      <div id="footer">
+        <div className="con">
+          <div className="container">
+            <div className="row m-auto">
+              <div className="col-md-4 mt-4">
+                <a className="" href="/">
+                  <h3 className="textprimary">
+                    <b>RIDASPY</b>
+                  </h3>
+                </a>
+              </div>
+              <div className="col-md-4 mt-4">
+                <h4 className="text-light">
+                  <b>QUICK LINKS</b>
+                </h4>
+                <div className="mt-4">
+                  <ul className="quick">
+                    <li>
+                      <h6>
+                        <a href="/" className="text-light">
+                          Home
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        <a href="/pricing" className="text-light">
+                          Pricing
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        <a href="/Products" className="text-light">
+                          Products
+                        </a>
+                      </h6>
+                    </li>
+                    <li>
+                      <h6>
+                        <a href="/Compatibility" className="text-light">
+                        Compatibility
+                        </a>
+                      </h6>
+                    </li>
+                  </ul>
                 </div>
-            </div><br/><br/>
-            <div className="container mt-5">
-                <h6><small>Disclaimer</small></h6>
-                <p className="text-muted"><small>SOFTWARE INTENDED FOR LEGAL USE ONLY. It is the violation of the applicable law and your local jurisdiction laws to install the Licensed Software onto a device you do not own.The law generally requires you to notify owners of the devices... more</small> </p>
-                <p className="text-muted text-center"><small>© 2021 spyPob. All trademarks are the property of their respective owners.</small></p>
+              </div>
+              <div className="col-md-4 mt-4">
+                <h4 className="text-light">
+                  <b>GET IN TOUCH</b>
+                </h4>
+                <div className="d-flex mt-4">
+                  <div className="circle mr-2">
+                    <i className="fa fa-facebook fa-2x text-light"></i>
+                  </div>
+                  <div className="circle mr-2">
+                  <a href="https://wa.link/u4brfj">
+                    <i className="fa fa-whatsapp fa-2x text-light"></i>
+                    </a>
+                  </div>
+                  <div className="circle mr-2">
+                    <i className="fa fa-instagram fa-2x text-light"></i>
+                  </div>
+                  <div className="circle mr-2">
+                    <i className="fa fa-twitter fa-2x text-light"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
-    )
+          </div>
+        </div>
+      </div>
+      <div className="bottom-part text-center pt-3">
+        <h5>
+          <b className="text-light mr-2">&copy; RidaSpy</b>
+          <span className="text-muted">{year}</span>
+        </h5>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom"; 
-import "./styles.css"
+import { Link } from "react-router-dom";
+import "./styles.css";
+import logo from "../images/RidaSpy.png";
 
 export default function Header() {
   return (
     <header className="">
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light shadow2">
+      <nav className="navbar  navbar-expand-lg navbar-light shadow2">
+          <a className="navbar-brand offset-0 offset-md-2" href="/">
+            <img src={logo} width="120px" alt="ridaspy logo" />
+          </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -16,18 +20,14 @@ export default function Header() {
         >
           <i className="fa fa-bars text-white fa-2x"></i>
         </button>
-        <a className="navbar-brand offset-md-1 offset-lg-2 d-flex" href="/">
-         {/*<img src={cover} alt="Bisquecrypto logo" width="200px" srcset="" />*/}
-         <i className="fa fa-user-secret fa-2x text-white mr-1"></i>
-         <h2 className="textprimary" style={{fontWeight:"bolder"}}>spyPob</h2>
-        </a>
-
-        <div className="collapse navbar-collapse offset-md-1 offset-lg-3 bg-dark" id="navbarTogglerDemo03">
-          <ul className="navbar-nav mr-auto mt-2 mt-lg-0 ">
-            <li className="nav-item"><div id="google_translate_element"></div></li>
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li className="nav-item">
+              <div id="google_translate_element"></div>
+            </li>
             <li className="nav-item">
               <Link className="nav-link text-white" to="/">
-                Home 
+                Home
               </Link>
             </li>
             <li className="nav-item">
@@ -46,7 +46,6 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-          <button className="btn primary">Login</button>
         </div>
       </nav>
     </header>

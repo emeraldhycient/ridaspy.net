@@ -1,0 +1,91 @@
+#hero_redesign {
+    --height: 70vh;
+    height: var(--height);
+    background-image: url(./images/hero1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blur {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: var(--height);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero_redesign h2,
+h5 {
+    font-weight: 700;
+    color: #ffff;
+}
+
+#hero_redesign h2 {
+    font-size: 32px;
+    margin: 35px 0;
+}
+
+#hero_redesign_list {
+    list-style-type: none;
+}
+
+#hero_redesign_list li {
+    padding: 10px 0;
+}
+
+.videoripple {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    margin-bottom: 0px;
+}
+
+.ripple {
+    margin: auto;
+    margin-top: 7rem;
+    margin-bottom: 0px;
+    background-color: #fff;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: relative;
+    animation: ripple 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ripple::before,
+.ripple::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    animation: inherit;
+    animation-delay: 1s;
+}
+
+.ripple::after {
+    animation-delay: 2s;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0.7rem rgba(128, 0, 128, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 6rem rgba(128, 0, 128, 0.2);
+    }
+}

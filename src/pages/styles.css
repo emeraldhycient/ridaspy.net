@@ -80,7 +80,7 @@
     width: 2px;
     height: 70px;
     background-color: #cacaca;
-    border: 2px solid #7b4bf5;
+    border: 2px solid purple;
 }
 
 #why {
@@ -125,12 +125,12 @@
 
 .compat2 {
     height: 100%;
-    background-color: rgba(123, 75, 245, .8);
+    background-color: rgba(128, 0, 128, .8);
 }
 
 .product {
     height: 100%;
-    background-color: rgba(123, 75, 245, .8);
+    background-color: rgba(128, 0, 128, .8);
     background-image: url('../images/step-phone3.png');
     background-position: right;
     background-size: contain;
@@ -151,7 +151,7 @@ textarea:focus,
     width: 90px;
     height: 90px;
     border-radius: 12px;
-    background-color: rgba(123, 75, 245, .8);
+    background-color: rgba(128, 0, 128, .8);
     display: flex;
     justify-content: center;
     align-items: center;

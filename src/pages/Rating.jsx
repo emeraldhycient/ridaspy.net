@@ -9,7 +9,7 @@ function Rating() {
           <div className="col-md-5 box bg-light shadow mb-3">
             <div className="text-center mt-4 w-100">
               <h1 className="textprimary">
-                <strong>70%</strong>
+                <strong>100%</strong>
               </h1>
               <h6>
                 <strong> OF OUR CUSTOMERS ARE TOTALLY SATISFIED</strong>
@@ -25,7 +25,7 @@ function Rating() {
           <div className="col-md-5 box bg-light shadow mb-3">
             <div className="text-center mt-4 w-100">
               <h4 className="mt-4">
-                <strong>spyPob is Rated Great</strong>
+                <strong>RidaSpy is Rated Great</strong>
               </h4>
               <h6>Based on 5,291 reviews</h6>
               <i className="fa fa-star-half textprimary fa-2x mt-2 mr-1"></i>

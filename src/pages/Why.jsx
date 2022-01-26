@@ -2,10 +2,10 @@ function Why() {
   return (
     <section id="why">
       <div className="container" style={{ paddingTop: "100px" }}>
-        <h1 className="text-center">Why Choose spyPob?</h1>
+        <h1 className="text-center">Why Choose RidaSpy?</h1>
         <div className="col-md-9 m-auto bg-light">
           <h6 className="text-muted p-1 mt-4">
-            We could go on and on with reasons why spyPob is the best monitoring
+            We could go on and on with reasons why RidaSpy is the best monitoring
             app on the planet. But we’d rather let the numbers do the talking.
           </h6>
         </div>

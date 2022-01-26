@@ -10,8 +10,8 @@ function Compatibility() {
     e.preventDefault();
 
     setTimeout(() => {
-        setisloading(true)
-    },2500);
+      setisloading(true);
+    }, 2500);
 
     return false;
   };
@@ -46,7 +46,7 @@ function Compatibility() {
             {isloading ? (
               <div className="text-light mt-0">
                 <i className="fa fa-check-circle text-light mr-1"></i>Great,
-                your device is compactible
+                your device is compatible
               </div>
             ) : (
               ""
@@ -62,7 +62,7 @@ function Compatibility() {
         }}
       >
         <h6 className="text-center">
-          <strong>SPYPOB COMPATIBLE WITH ALL POPULAR DEVICES</strong>
+          <strong>RidaSpy COMPATIBLE WITH ALL POPULAR DEVICES</strong>
         </h6>
         <div className="container mb-4 pb-4">
           <div className="col-md-3 text-center d-flex mx-auto mt-5">
@@ -84,13 +84,13 @@ function Compatibility() {
             <strong>START MONITORING NOW</strong>
           </h6>
           <div className="d-flex">
-            <button className="btn primary btn-md-lg px-5 mt-5 mr-2">
+            <button className="btn primary md-lg px-5 mt-5 mr-2">
               <a href="/pricing" className="text-light">
                 {" "}
                 Buy Now
               </a>
             </button>
-            <button className="btn textprimary btn-md-lg px-5 mt-5 demobtn">
+            <button className="btn textprimary md-lg px-5 mt-5 demobtn">
               <i className="fa fa-eye"></i> <a href="/pricing">View Demo</a>
             </button>
           </div>

@@ -9,10 +9,10 @@ function Hero() {
                 <div className="col-md-6 col-lg-5 m-auto">
                     <h1 className="text-light"><strong>The Best Phone Tracker</strong></h1>
                     <h3 className="text-light mb-3">for Parental Control</h3>
-                    <h5 className="text-muted">Know more. Worry less. That’s the power of spyPob, the app that lets you find out what they’re up to on their phone and online. And they won’t even know you’re using it.</h5>
+                    <h5 className="text-muted">Know more. Worry less. That’s the power of RidaSpy, the app that lets you find out what they’re up to on their phone and online. And they won’t even know you’re using it.</h5>
                 <div className="d-flex">
-                <button className="btn primary btn-md-lg px-5 mt-5"><a href="/pricing" className="text-light"> Buy Now</a></button>
-                <button className="btn textprimary btn-md-lg px-5 mt-5 demobtn"><i className="fa fa-eye"></i> <a href="/pricing">View  Demo</a></button>
+                <button className="btn primary md-lg px-5 mt-5"><a href="/pricing" className="text-light"> Buy Now</a></button>
+                <button className="btn textprimary md-lg px-5 mt-5 demobtn"><i className="fa fa-eye"></i> <a href="/pricing">View  Demo</a></button>
                 </div>
                 </div>
                 <div className="col-md-6 col-lg-4 m-auto">
