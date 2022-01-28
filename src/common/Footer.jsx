@@ -16,6 +16,15 @@ function Footer() {
                     <b>RIDASPY</b>
                   </h3>
                 </a>
+                <a href="https://wa.link/u4brfj">
+                    <i className="fa fa-whatsapp  text-light"> Whatsapp</i>
+                    </a><br/>
+                    <a href="tel:+13374352154">
+                    <i className="fa fa-phone text-light"> +1(337) 435 2154</i>
+                    </a><br/>
+                    <a href="mailto:hackrida10@gmail.com">
+                    <i className="fa fa-envelope text-light"> hackrida10@gmail.com</i>
+                    </a>
               </div>
               <div className="col-md-4 mt-4">
                 <h4 className="text-light">
