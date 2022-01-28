@@ -19,6 +19,30 @@
     justify-content: center;
 }
 
+@media(max-width:760px) {
+    #hero_redesign {
+        --height: fit-content;
+        height: var(--height);
+        background-image: url(./images/hero1.jpg);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .blur {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: var(--height);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+}
+
 #hero_redesign h2,
 h5 {
     font-weight: 700;
